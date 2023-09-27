@@ -9,6 +9,7 @@ interface Movie {
       poster: string;
       backdrops: string[];
       reviewIds: number[];
+      description: string;
   }
   
   export default Movie;

@@ -5,12 +5,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from './components/Layout';
 import Home from './components/Home/Home';
 import Movie from './types/Movie';
-import Reviews from './components/Reviews/Reviews';
+import MovieInfo from './components/MovieInfo/MovieInfo';
 
 function App() {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [movie, setMovie] = useState<Movie | null>(null);
-  const [reviews, setReviews] = useState<string[]>([]);
 
   const getMovies = async () => {
     try {
@@ -26,7 +25,6 @@ function App() {
     const response = await api.get(`/api/v1/movies/${imdbId}`)
     const singleMovie = response.data;
     setMovie(singleMovie);
-    setReviews(singleMovie.reviews)
   }
 
   useEffect(() => {
@@ -40,7 +38,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route path="/" element={<Home movies={movies} />}></Route>
-              <Route path="/movie/:movieId" element={<Reviews getMovieData={getMovieData} movie={movie} reviews={reviews} setReviews={setReviews} />}></Route>
+              <Route path="/movie/:movieId" element={<MovieInfo getMovieData={getMovieData} movie={movie} />}></Route>
             </Route>
           </Routes>
         </BrowserRouter>
