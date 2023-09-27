@@ -2,6 +2,11 @@
 
 This project consists of a Spring Boot-based API that provides movie details, including title, description, trailer link, and more, as well as a React frontend for interacting with the API.
 
+## Homepage
+
+![screenshot-movieboot netlify app-2023 09 27-12_49_03](https://github.com/codebyaadi/movieboot-frontend/assets/100792725/08171a68-fae7-4a13-9e44-5ef63a712a76)
+
+
 ## Technologies Used
 
 - Spring Boot
