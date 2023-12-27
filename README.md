@@ -17,7 +17,7 @@ This project consists of a Spring Boot-based API that provides movie details, in
 
 ## API Endpoint
 
-The API endpoint for accessing movie details is: [![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white)](https://movieboot.netlify.app/)
+The API endpoint for accessing movie details is: [![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white)](https://movies-springboot-api-lsq3.onrender.com/api/v1/movies)
 
 ## React Frontend
 
